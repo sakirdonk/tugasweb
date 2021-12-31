@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table style="width: 80%;" align="center">
+        <thead>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <table border="0" style="width: 100%;">
+                            <tr>
+                                <td style="border-left: 1;">Home</td>
+                                <td>Generate Link</td>
+                                <td>Trnsaction History</td>
+                                <td>Policy</td>
+                                <td>Logout</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <form>
+                <tr>
+                    <td rowspan="3" width="35%"><img src="kotakhitam.jpg"></td>
+                    <td width="15%">Title Here</td>
+                    <td width="50%">:<input type="text" placeholder="MacBook Air E800" /></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:<textarea placeholder="Year : 2004 <br/> Model <br/> Condition: Mint"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:<input type="text" placeholder="123-456-789-0"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Upload Picture</button></td>
+                    <td>Bank</td>
+                    <td>:
+                        <select name="bank">
+                            <option value="BCA">BCA</option>
+                            <option value="Cimb Niaga">Cimb Niaga</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BNI">BNI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="6"></td>
+                    <td>Account Holder</td>
+                    <td>:<input type="text" placeholder="Name Here"></td>
+                </tr>
+                <tr>
+                    <td>Transaction</td>
+                    <td>:<input type="number" min="1" value="3">
+                        <br />* if the transaction is for 3 person, choose 3 from the drop-down list
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <ol style="list-style: none;">
+                            <li><input type="checkbox" value="mobile">Send to Mobile Phone</li>
+                            <li><input type="checkbox" value="email">Send to Email</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send to Mobile Phone</td>
+                    <td>:<input type="text" placeholder="1234567890, 1234567891"></td>
+                </tr>
+                <tr>
+                    <td>Send to Email</td>
+                    <td>:<input type="email" placeholder="mraihanz322@gmail.com, sakirdonk100@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Generate Nabr Link</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+</body>
+
+</html>

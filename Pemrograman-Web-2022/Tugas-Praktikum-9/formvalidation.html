@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="storage.js"></script>
+    <script>
+        function validation() {
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let waktu = document.getElementById("waktu").value;
+            let tujuan = document.getElementById("tujuan").value;
+            let tiket = document.getElementById("tiket").value;
+
+            if (
+                nama == "Muhammad Raihan" &&
+                email == "mraihanz322@gmail.com" &&
+                waktu == "08:00"
+                && tujuan == "Jakarta"
+                && tiket == "2"
+            ) {
+                document.getElementById("hasil").innerHTML = "<br><br>Nama : " + nama + "<br>Email : " + email + "<br>Jam Keberangkatan : " + waktu + "<br>Tujuan Keberangkatan : " + tujuan + "<br>Jumlah Tiket : " + tiket;
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            }
+            // nama
+            else if (nama != "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu != "08:00" && tujuan != "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "data tidak valid";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "stuff/serumerah.jpg";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama != "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu != "08:00" && tujuan != "Jakarta" && tiket == "2") {
+                document.getElementById("nama").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "data tidak valid";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "stuff/serumerah.jpg";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama != "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu != "08:00" && tujuan == "Jakarta" && tiket == "2") {
+                document.getElementById("nama").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "data tidak valid";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "stuff/serumerah.jpg";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama != "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu == "08:00" && tujuan == "Jakarta" && tiket == "2") {
+                document.getElementById("nama").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "data tidak valid";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "stuff/serumerah.jpg";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama != "Muhammad Raihan") {
+                document.getElementById("nama").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "data tidak valid";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "stuff/serumerah.jpg";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            }
+            // email
+            else if (nama == "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu != "08:00" && tujuan != "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama == "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu == "08:00" && tujuan != "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama == "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu == "08:00" && tujuan == "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            }
+            else if (email != "mraihanz322@gmail.com") {
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            }
+            // waktu
+            else if (nama == "Muhammad Raihan" && email != "mraihanz322@gmail.com" && waktu != "08:00" && tujuan != "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "data tidak valid";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "stuff/serumerah.jpg";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama == "Muhammad Raihan" && email == "mraihanz322@gmail.com" && waktu != "08:00" && tujuan != "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (nama == "Muhammad Raihan" && email == "mraihanz322@gmail.com" && waktu != "08:00" && tujuan == "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (waktu != "08:00") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "data tidak valid";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "stuff/serumerah.jpg";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            }
+            // tujuan
+            else if (nama == "Muhammad Raihan" && email == "mraihanz322@gmail.com" && waktu == "08:00" && tujuan != "Jakarta" && tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            }
+            else if (tujuan != "Jakarta") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "data tidak valid";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "stuff/serumerah.jpg";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "";
+                document.getElementById("notif4").style = "width:15px";
+            } else if (tiket != "2") {
+                document.getElementById("nama").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal").innerHTML = "";
+                document.getElementById("gagal").style = "font-size: 10px; color: red;";
+                document.getElementById("notif").src = "";
+                document.getElementById("notif").style = "width:15px";
+                document.getElementById("email").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal1").innerHTML = "";
+                document.getElementById("gagal1").style = "font-size: 10px; color: red;";
+                document.getElementById("notif1").src = "";
+                document.getElementById("notif1").style = "width:15px";
+                document.getElementById("waktu").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal2").innerHTML = "";
+                document.getElementById("gagal2").style = "font-size: 10px; color: red;";
+                document.getElementById("notif2").src = "";
+                document.getElementById("notif2").style = "width:15px";
+                document.getElementById("tujuan").style = "border: black solid 1px;border-radius: 3px;";
+                document.getElementById("gagal3").innerHTML = "";
+                document.getElementById("gagal3").style = "font-size: 10px; color: red;";
+                document.getElementById("notif3").src = "";
+                document.getElementById("notif3").style = "width:15px";
+                document.getElementById("tiket").style = "border: red solid 1px;border-radius: 3px;";
+                document.getElementById("gagal4").innerHTML = "data tidak valid";
+                document.getElementById("gagal4").style = "font-size: 10px; color: red;";
+                document.getElementById("notif4").src = "stuff/serumerah.jpg";
+                document.getElementById("notif4").style = "width:15px";
+            }
+
+            else {
+                alert("Data Tidak Valid");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Nama: <input type="text" maxlength="30" name="" id="nama"><img id="notif"><span id="gagal"></span><br>
+        Email: <input type="email" name="" id="email"><img id="notif1"><span id="gagal1"></span><br>
+        Jam Keberangkatan: <input type="time" name="" id="waktu"><img id="notif2"><span id="gagal2"></span><br>
+        Tujuan Keberangkatan: <input type="text" name="" id="tujuan"><img id="notif3"><span id="gagal3"></span><br>
+        Jumlah Tiket: <input type="number" min="0" max="10" name="" id="tiket"><img id="notif4"><span
+            id="gagal4"></span><br>
+        <input type="button" value="Submit" onclick="validation()">
+        <div id="hasil">
+        </div>
+    </form>
+</body>
+
+</html>

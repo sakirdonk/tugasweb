@@ -1,0 +1,161 @@
+header {
+    margin: auto;
+    width: 60%;
+    background-color: rgba(153, 153, 153, 0.288);
+}
+
+section {
+    margin: auto;
+    width: 60%;
+}
+
+footer {
+    margin: auto;
+    width: 60%;
+}
+
+#header {
+    display: flex;
+    border: black 1px solid;
+}
+
+#header ol {
+    list-style: none;
+    display: flex;
+}
+
+#section {
+    display: flex;
+    border: black 1px solid;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+}
+#table u{
+    color: blue;
+}
+
+#footer {
+    display: flex;
+    border: black 1px solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+#footer1 {
+    display: flex;
+    width: 530px;
+}
+
+#footer1 ol {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#footer2 {
+    display: flex;
+}
+
+#footerr {
+    text-align: right;
+}
+
+#footerl {
+    padding-left: 20px;
+}
+
+input {
+    width: 140px;
+}
+
+#summary{
+    padding-left: 15px;
+}
+
+#summary table{
+    background-color: rgba(153, 153, 153, 0.288);
+}
+
+#checklist{
+    float: left;
+    width: 50px;
+    padding-right: 10px;
+}
+
+#order{
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+}
+
+#thank {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#subscribe{
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+#bbox {
+    width: 13px;
+    height: 13px;
+    border: black 1px solid;
+    border-radius: 30%;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#sitename{
+    display: flex;
+}
+
+#category{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 280px;
+}
+
+#feature{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#apply{
+    color: grey;
+}
+
+#method{
+    padding-top: 30px;
+}
+
+#info{
+    margin-top: 0px;
+}
+
+#summary table{
+    padding-bottom: 25px;
+}
+
+#summary h4{
+    margin-top: 10pxx;
+    margin-bottom: 10px;
+}
+
+body{
+    margin-top: 0px;
+
+}
+#bank img{
+    width: 20px;
+}
+#payment img{
+    width: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function show(){
+            let namaGambar = document.getElementById("pilihgambar").value;
+            let img = document.getElementById("img");
+            if (namaGambar == "banteng") {
+                document.getElementById("img").src = "binatang/banteng.jpg";
+                document.getElementById("img").style="width:40%;";
+                alert("Nama File Gambar adalah banteng.jpg");
+            } else if (namaGambar == "elang") {
+                document.getElementById("img").src = "binatang/elang.jpg";
+                document.getElementById("img").style="width:40%;";
+                alert("Nama File Gambar adalah elang.jpg");
+            } else if (namaGambar == "hiu") {
+                document.getElementById("img").src = "binatang/hiu.jpg";
+                document.getElementById("img").style="width:40%;";
+                alert("Nama File Gambar adalah hiu.jpg");
+            } else if (namaGambar == "udang") {
+                document.getElementById("img").src = "binatang/udang.jpg";
+                document.getElementById("img").style="width:40%;";
+                alert("Nama File Gambar adalah udang.jpg");
+            } else if (namaGambar == "rakun") {
+                document.getElementById("img").src = "binatang/rakun.jpg";
+                document.getElementById("img").style="width:40%;";
+                alert("Nama File Gambar adalah rakun.jpg");
+            } else if (namaGambar == "kucing") {
+                document.getElementById("img").src = "binatang/kucing.jpg";
+                document.getElementById("img").style="width:40%;";
+                alert("Nama File Gambar adalah kucing.jpg");
+            }else {
+                alert("Chose Again");
+            }
+        }
+    </script>
+<body>
+    <div style="width: 100%;margin-top: 20px;">
+        <form>
+            <select id="pilihgambar" onchange="show()">
+                <option value="banteng">Banteng</option>
+                <option value="elang">Elang</option>
+                <option value="hiu">Hiu</option>
+                <option value="udang">Udang</option>
+                <option value="rakun">Rakun</option>
+                <option value="kucing">Kucing</option>
+            </select>
+            <br>
+            <span><img alt="" id="img"></span>
+        </form>
+    </div>
+</body>
+
+</html>

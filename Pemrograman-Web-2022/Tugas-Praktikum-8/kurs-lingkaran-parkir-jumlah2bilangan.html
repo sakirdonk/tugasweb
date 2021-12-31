@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Lingkaran
+        function lingkaran() {
+            const phi = 3.14;
+            let jari2 = document.getElementById("jari").value;
+            console.log(jari2);
+            let lling = phi * jari2 * jari2;
+            let kling = 0.5 * phi * jari2;
+            console.log(lling);
+            console.log(kling);
+            let print_hasil = document.getElementById("hasil");
+            print_hasil.innerHTML = "Hasil Luas Lingkaran dengan angka yang Diinput adalah " + lling + "<br><br>Hasil Keliling Lingkaran dengan angka yang Diinput adalah " + kling;
+        }
+        // Kurs
+        function convert() {
+            const dolar = 1 / 14650;
+            console.log(dolar);
+            let idr = document.getElementById("idr").value;
+            console.log(idr);
+            let konversi = idr * dolar;
+            console.log(konversi);
+            let hasil_konv = document.getElementById("hasilKurs");
+            hasil_konv.innerHTML = konversi + "$";
+        }
+        // Parkir
+        function total() {
+            let masuk = document.getElementById("jmasuk").value;
+            let keluar = document.getElementById("jkeluar").value;
+            let lama_parkir = keluar - masuk;
+            let biaya = 0;
+            const biaya_awal = 3000;
+            const biaya_perjam = 1000;
+            if (lama_parkir <= 2) {
+                let total = document.getElementById("total");
+                total.innerHTML = biaya_awal;
+            } else {
+                let total_jam = lama_parkir - 2;
+                let hasil = biaya_awal + (total_jam * biaya_perjam);
+                let total = document.getElementById("total");
+                total.innerHTML = hasil;
+            }
+        }
+        // Penjumlahan
+        function hitung() {
+            let bil1 = Number(document.getElementById("bil1").value);
+            let bil2 = Number(document.getElementById("bil2").value);
+            let bil3 = bil1 + bil2;
+            document.getElementById("bil3").value = bil3;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Latihan JavaScript 1</h1>
+    Lingkaran
+    Masukkan Jari-Jari
+    <input type="number" name="" value="" id="jari">
+    <br>
+    <button onclick="lingkaran()">Masukkan</button>
+    <br>
+    <span id="hasil"></span>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Kurs Mata Uang</h1>
+    1$ = Rp 14.650 ,-
+    <br>
+    <table border="1">
+        <tr>
+            <td>Input Nilai IDR</td>
+            <td>Dollar</td>
+            <td>Hasil Konversi IDR ke Dollar</td>
+        </tr>
+        <tr>
+            <td>Rp<input type="number" name="" id="idr" value=""></td>
+            <td><button onclick="convert()">Convert</button></td>
+            <td id="hasilKurs"></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Parkir</h1>
+    <table>
+        <tr>
+            <th>Jam Masuk</th>
+            <th>Jam Keluar</th>
+            <th></th>
+            <th>Biaya</th>
+        </tr>
+        <tr>
+            <th><input type="number" name="" value="" id="jmasuk" min="0" max="24"></th>
+            <th><input type="number" name="" value="" id="jkeluar" min="0" max="24"></th>
+            <th><button onclick="total()">Submit</button></th>
+            <th id="total"></th>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Penjumlahan</h1>
+    <input type="text" value="0" id="bil1" onchange="hitung()"> + <input type="text" value="0" id="bil2"
+        onchange="hitung()"> = <input type="text" value="0" id="bil3">
+</body>
+
+</html>

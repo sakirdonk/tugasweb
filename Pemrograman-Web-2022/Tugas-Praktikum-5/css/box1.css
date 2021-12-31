@@ -1,0 +1,27 @@
+#body {
+    display: flex;
+}
+
+#body div {
+    width: 20%;
+    border: 1px solid black;
+    padding: 20px 5px;
+    margin: 20px auto;
+    height: 550px;
+}
+
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+#box3 {
+    background-color: green;
+}
+
+#box4 {
+    background-color: purple;
+}

@@ -1,0 +1,96 @@
+#pala {
+    display: flex;
+}
+
+h4 {
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+u {
+    color: blue;
+}
+
+#cat {
+    color: black;
+}
+
+.pdf {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#fieldset{
+    width: 55%;
+    margin: auto;
+}
+#img{
+    float: left;
+    padding-top: 10px;
+}
+#img img{
+    width: 160px;
+    margin-right: 20px;
+}
+#profile{
+    width: 60%;
+}
+#category{
+    padding-top: 30px;
+    text-align: right;
+}
+#section{
+    padding-top: 15px;
+}
+#footer{
+    display: flex;
+    padding-top: 15px;
+}
+#video{
+    margin: auto;
+}
+#video video{
+    width:250px;
+    height:200px;
+}
+#fimg{
+    margin: auto;
+    border: 1px black solid;
+    width: 28%;
+    height: 200px;
+}
+#fimg img{
+    width:70px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pdf img{
+    width: 15px;
+}
+#attachment{
+    border: 1px black solid;
+    margin: auto;
+    width: 30%;
+    height: 200px;
+}
+#attachment ol{
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 50px;
+}
+#attachment audio{
+    width: 220px;
+}

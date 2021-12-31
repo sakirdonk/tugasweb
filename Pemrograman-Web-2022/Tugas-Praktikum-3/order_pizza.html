@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza List</title>
+</head>
+
+<body style="background-color: black;">
+    <fieldset style="width: 40%; margin: auto; background-color: white;">
+        <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+        <p>Our 12" wood-fired- pizzas are available for delivery. Build your custom pizza and we'll deliver it
+            within an
+            hour.</p>
+        <form action="pizzalink.html" method="POST">
+            Your Information<br />
+            Name:<input type="username" name="nama"><br />
+            Address:<input type="text" name="alamat"><br />
+            Telephone Number:<input type="text" name="nomorhp"><br />
+            Email:<input type="email" name="email" placeholder="ken253@gmail.com"><br />
+            Delivery Instructions:<br />
+            <textarea maxlength="400" name="note" placeholder="No more than 400 character long"></textarea><br />
+            <b>Design Your Dream Pizza:</b><br />
+            Pizza specs<br /><br />
+            Crust(Choose one):
+            <ol style="list-style: none;">
+                <li><input type="radio" name="crust" value="cwhite">Classic white</li>
+                <li><input type="radio" name="crust" value="multigrain">Multigrain</li>
+                <li><input type="radio" name="crust" value="cscrust">Cheese-stuffed crust</li>
+                <li><input type="radio" name="crust" value="gfree">Gluten-free</li>
+            </ol>
+            Toppings(Choose as many as you want):<br />
+            <input type="checkbox" id="topping1" name="topping1" value="redsauce" checked>
+            <label for="topping1">Red sauce</label><br />
+            <input type="checkbox" id="topping2" name="topping2" value="whitesauce">
+            <label for="topping2">White sauce</label><br />
+            <input type="checkbox" id="topping3" name="topping3" value="mozzarella">
+            <label for="topping3">Mozzarella Cheese</label><br />
+            <input type="checkbox" id="topping4" name="topping4" value="pepperoni">
+            <label for="topping4">Pepperoni</label><br />
+            <input type="checkbox" id="topping5" name="topping5" value="mushrooms">
+            <label for="topping5">Mushrooms</label><br />
+            <input type="checkbox" id="topping6" name="topping6" value="peppers">
+            <label for="topping6">Peppers</label><br />
+            <input type="checkbox" id="topping7" name="topping7" value="anchovies">
+            <label for="topping7">Anchovies</label>
+            <br />
+            Number<br />
+            How many pizzas:<input type="number" value="" min="1" max="6"><br /><br />
+            <button type="submit"><a href="pizzalink.html">Bring me a pizza!</a></button> <button type="reset">Reset</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>

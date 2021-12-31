@@ -1,0 +1,54 @@
+#boxatas {
+    width: 95%;
+    height: 100px;
+    padding: 20px 5px;
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: greenyellow;
+}
+
+#boxtengah {
+    display: flex;
+    margin: 30px auto;
+}
+
+#tengahkiri {
+    width: 20%;
+    height: 170px;
+    padding: 20px 5px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: green;
+}
+
+#tengahkanan {
+    width: 70%;
+    height: 170px;
+    padding: 20px 5px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: violet;
+}
+
+#boxbawah {
+    display: flex;
+    margin: 30px auto;
+}
+
+#bawahkiri {
+    width: 20%;
+    height: 170px;
+    padding: 20px 5px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: black;
+}
+
+#bawahkanan {
+    width: 70%;
+    height: 170px;
+    padding: 20px 5px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: red;
+}
